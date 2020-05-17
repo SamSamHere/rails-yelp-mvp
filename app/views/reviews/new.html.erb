@@ -1,0 +1,9 @@
+<h1>Please state your review as below:</h1>
+
+<%= simple_form_for [@new_review_restaurant, @new_review] do |f| %>
+<!-- Passing the Restaurant Instance and the Review Insance, rest id comes first-->
+  <%= f.input :content %>
+  <%= f.input :rating %>
+  <%= f.submit %>
+
+<% end %>
